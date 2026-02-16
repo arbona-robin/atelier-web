@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiche Triche — HTML & CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>Fiche Triche CSS & HTML</h1>
+      <p class="subtitle">Copie-colle, modifie et expérimente !</p>
+
+      <!-- ===================== COULEURS ===================== -->
+      <h2><span>🎨</span> Couleurs</h2>
+
+      <div class="card">
+        <div class="card-title">Palettes prêtes à l'emploi</div>
+        <div class="palette">
+          <div class="swatch" style="background:#ef4444">#ef4444</div>
+          <div class="swatch" style="background:#f97316">#f97316</div>
+          <div class="swatch" style="background:#eab308">#eab308</div>
+          <div class="swatch" style="background:#22c55e">#22c55e</div>
+          <div class="swatch" style="background:#3b82f6">#3b82f6</div>
+          <div class="swatch" style="background:#8b5cf6">#8b5cf6</div>
+          <div class="swatch" style="background:#ec4899">#ec4899</div>
+          <div class="swatch" style="background:#0f172a">#0f172a</div>
+        </div>
+        <pre><span class="comment">/* Changer la couleur du texte */</span>
+<span class="prop">color</span>: <span class="val">#3b82f6</span>;
+
+<span class="comment">/* Changer la couleur de fond */</span>
+<span class="prop">background-color</span>: <span class="val">#0f172a</span>;</pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Dégradés</div>
+        <pre><span class="comment">/* De gauche à droite */</span>
+<span class="prop">background</span>: <span class="val">linear-gradient(to right, #ef4444, #8b5cf6)</span>;
+
+<span class="comment">/* De haut en bas */</span>
+<span class="prop">background</span>: <span class="val">linear-gradient(to bottom, #3b82f6, #22c55e)</span>;
+
+<span class="comment">/* En diagonale, 3 couleurs */</span>
+<span class="prop">background</span>: <span class="val">linear-gradient(135deg, #f97316, #ec4899, #8b5cf6)</span>;</pre>
+      </div>
+
+
+      <!-- ===================== TEXTE ===================== -->
+      <h2><span>✏️</span> Texte</h2>
+
+      <div class="card">
+        <div class="card-title">Taille, style et épaisseur</div>
+        <pre><span class="prop">font-size</span>: <span class="val">24px</span>;              <span class="comment">/* taille */</span>
+<span class="prop">font-weight</span>: <span class="val">bold</span>;            <span class="comment">/* gras */</span>
+<span class="prop">font-style</span>: <span class="val">italic</span>;          <span class="comment">/* italique */</span>
+<span class="prop">text-align</span>: <span class="val">center</span>;          <span class="comment">/* centrer le texte */</span>
+<span class="prop">text-transform</span>: <span class="val">uppercase</span>;    <span class="comment">/* TOUT EN MAJUSCULES */</span>
+<span class="prop">letter-spacing</span>: <span class="val">5px</span>;          <span class="comment">/* e s p a c e r  les lettres */</span>
+<span class="prop">text-decoration</span>: <span class="val">underline</span>;   <span class="comment">/* souligner */</span>
+<span class="prop">text-decoration</span>: <span class="val">none</span>;        <span class="comment">/* enlever le soulignement des liens */</span></pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Polices Google Fonts (à coller dans le &lt;head&gt;)</div>
+        <pre><span class="comment">/* 1. Copie cette ligne dans le &lt;head&gt; de ton HTML */</span>
+<span class="tag">&lt;link href="https://fonts.googleapis.com/css2?family=<span class="str">Pacifico</span>&display=swap" rel="stylesheet"&gt;</span>
+
+<span class="comment">/* 2. Utilise-la dans ton CSS */</span>
+<span class="prop">font-family</span>: <span class="val">'Pacifico', cursive</span>;</pre>
+        <div class="tip">Autres polices sympas à essayer : <strong>Permanent Marker</strong>, <strong>Press Start 2P</strong>, <strong>Protest Riot</strong>, <strong>Silkscreen</strong>, <strong>Bungee Shade</strong></div>
+      </div>
+
+
+      <!-- ===================== BORDURES & FORMES ===================== -->
+      <h2><span>📦</span> Bordures & formes</h2>
+
+      <div class="card">
+        <pre><span class="prop">border</span>: <span class="val">3px solid #3b82f6</span>;       <span class="comment">/* bordure bleue */</span>
+<span class="prop">border</span>: <span class="val">3px dashed #ef4444</span>;      <span class="comment">/* bordure pointillée rouge */</span>
+<span class="prop">border-radius</span>: <span class="val">20px</span>;            <span class="comment">/* coins arrondis */</span>
+<span class="prop">border-radius</span>: <span class="val">50%</span>;              <span class="comment">/* cercle parfait ! */</span></pre>
+      </div>
+
+
+      <!-- ===================== OMBRES ===================== -->
+      <h2><span>🌑</span> Ombres</h2>
+
+      <div class="card">
+        <pre><span class="comment">/* Ombre douce sur un bloc */</span>
+<span class="prop">box-shadow</span>: <span class="val">0 4px 20px rgba(0, 0, 0, 0.3)</span>;
+
+<span class="comment">/* Ombre colorée style "néon" */</span>
+<span class="prop">box-shadow</span>: <span class="val">0 0 20px #3b82f6, 0 0 60px #3b82f6</span>;
+
+<span class="comment">/* Ombre sur du texte */</span>
+<span class="prop">text-shadow</span>: <span class="val">2px 2px 4px rgba(0, 0, 0, 0.5)</span>;
+
+<span class="comment">/* Texte néon */</span>
+<span class="prop">text-shadow</span>: <span class="val">0 0 10px #ec4899, 0 0 40px #ec4899</span>;</pre>
+      </div>
+
+
+      <!-- ===================== ESPACEMENT ===================== -->
+      <h2><span>↔️</span> Espacement</h2>
+
+      <div class="card">
+        <pre><span class="prop">padding</span>: <span class="val">20px</span>;       <span class="comment">/* espace INTÉRIEUR (entre le contenu et la bordure) */</span>
+<span class="prop">margin</span>: <span class="val">20px</span>;        <span class="comment">/* espace EXTÉRIEUR (entre l'élément et ses voisins) */</span>
+<span class="prop">margin</span>: <span class="val">0 auto</span>;     <span class="comment">/* centrer un bloc horizontalement */</span>
+<span class="prop">max-width</span>: <span class="val">600px</span>;   <span class="comment">/* limiter la largeur d'un bloc */</span></pre>
+        <div class="tip">Astuce : <strong>padding</strong> = coussin à l'intérieur, <strong>margin</strong> = marge à l'extérieur</div>
+      </div>
+
+
+      <!-- ===================== IMAGES ===================== -->
+      <h2><span>🖼️</span> Images</h2>
+
+      <div class="card">
+        <div class="card-title">Styliser une image</div>
+        <pre><span class="prop">width</span>: <span class="val">50%</span>;                <span class="comment">/* moitié de la largeur */</span>
+<span class="prop">width</span>: <span class="val">300px</span>;              <span class="comment">/* largeur fixe */</span>
+<span class="prop">border-radius</span>: <span class="val">50%</span>;         <span class="comment">/* image ronde */</span>
+<span class="prop">border-radius</span>: <span class="val">20px</span>;        <span class="comment">/* coins arrondis */</span>
+<span class="prop">border</span>: <span class="val">5px solid gold</span>;    <span class="comment">/* cadre doré */</span></pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Filtres sur les images</div>
+        <pre><span class="prop">filter</span>: <span class="val">grayscale(100%)</span>;     <span class="comment">/* noir et blanc */</span>
+<span class="prop">filter</span>: <span class="val">blur(5px)</span>;            <span class="comment">/* flou */</span>
+<span class="prop">filter</span>: <span class="val">sepia(100%)</span>;          <span class="comment">/* effet photo ancienne */</span>
+<span class="prop">filter</span>: <span class="val">brightness(150%)</span>;     <span class="comment">/* plus lumineux */</span>
+<span class="prop">filter</span>: <span class="val">contrast(200%)</span>;       <span class="comment">/* plus de contraste */</span>
+<span class="prop">filter</span>: <span class="val">hue-rotate(90deg)</span>;    <span class="comment">/* changer les couleurs ! */</span>
+<span class="prop">filter</span>: <span class="val">saturate(300%)</span>;       <span class="comment">/* couleurs ultra vives */</span></pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Images libres prêtes à coller</div>
+        <pre><span class="comment">&lt;!-- Paysage montagne --&gt;</span>
+<span class="tag">&lt;img src=<span class="str">"https://picsum.photos/id/29/800/400"</span>&gt;</span>
+
+<span class="comment">&lt;!-- Forêt --&gt;</span>
+<span class="tag">&lt;img src=<span class="str">"https://picsum.photos/id/15/800/400"</span>&gt;</span>
+
+<span class="comment">&lt;!-- Ville de nuit --&gt;</span>
+<span class="tag">&lt;img src=<span class="str">"https://picsum.photos/id/274/800/400"</span>&gt;</span>
+
+<span class="comment">&lt;!-- Image aléatoire (change à chaque rechargement) --&gt;</span>
+<span class="tag">&lt;img src=<span class="str">"https://picsum.photos/800/400"</span>&gt;</span></pre>
+      </div>
+
+
+      <!-- ===================== HOVER ===================== -->
+      <h2><span>👆</span> Effets au survol (hover)</h2>
+
+      <div class="card">
+        <pre><span class="comment">/* D'abord : ajouter la transition sur l'élément */</span>
+<span class="tag">img</span> {
+  <span class="prop">transition</span>: <span class="val">all 0.3s ease</span>;
+}
+
+<span class="comment">/* Ensuite : dire ce qui change au survol */</span>
+<span class="tag">img:hover</span> {
+  <span class="prop">transform</span>: <span class="val">scale(1.1)</span>;        <span class="comment">/* zoom */</span>
+  <span class="prop">filter</span>: <span class="val">brightness(120%)</span>;    <span class="comment">/* plus lumineux */</span>
+}
+
+<span class="comment">/* Lien qui change de couleur */</span>
+<span class="tag">a:hover</span> {
+  <span class="prop">color</span>: <span class="val">#ec4899</span>;
+}
+
+<span class="comment">/* Bouton qui grossit */</span>
+<span class="tag">h1:hover</span> {
+  <span class="prop">transform</span>: <span class="val">rotate(5deg) scale(1.05)</span>;
+  <span class="prop">color</span>: <span class="val">gold</span>;
+}</pre>
+        <div class="tip">Mets toujours <strong>transition</strong> sur l'élément de base (pas sur le :hover) pour que l'animation soit fluide dans les deux sens !</div>
+      </div>
+
+
+      <!-- ===================== ANIMATIONS ===================== -->
+      <h2><span>✨</span> Animations</h2>
+
+      <div class="card">
+        <div class="card-title">Animation qui tourne en boucle</div>
+        <pre><span class="comment">/* Définir l'animation */</span>
+<span class="tag">@keyframes</span> <span class="str">flotter</span> {
+  0%   { <span class="prop">transform</span>: <span class="val">translateY(0px)</span>; }
+  50%  { <span class="prop">transform</span>: <span class="val">translateY(-15px)</span>; }
+  100% { <span class="prop">transform</span>: <span class="val">translateY(0px)</span>; }
+}
+
+<span class="comment">/* Appliquer à un élément */</span>
+<span class="tag">h1</span> {
+  <span class="prop">animation</span>: <span class="val">flotter 3s ease-in-out infinite</span>;
+}
+
+<span class="comment">/* Animation arc-en-ciel */</span>
+<span class="tag">@keyframes</span> <span class="str">arc-en-ciel</span> {
+  0%   { <span class="prop">color</span>: <span class="val">#ef4444</span>; }
+  25%  { <span class="prop">color</span>: <span class="val">#eab308</span>; }
+  50%  { <span class="prop">color</span>: <span class="val">#22c55e</span>; }
+  75%  { <span class="prop">color</span>: <span class="val">#3b82f6</span>; }
+  100% { <span class="prop">color</span>: <span class="val">#ef4444</span>; }
+}
+
+<span class="tag">h1</span> {
+  <span class="prop">animation</span>: <span class="val">arc-en-ciel 4s linear infinite</span>;
+}</pre>
+      </div>
+
+      <!-- ===================== HTML ===================== -->
+      <h2><span>🧱</span> Balises HTML utiles</h2>
+
+      <div class="card">
+        <pre><span class="comment">&lt;!-- Titre (de h1 le plus gros à h6 le plus petit) --&gt;</span>
+<span class="tag">&lt;h1&gt;</span>Mon gros titre<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h3&gt;</span>Un sous-titre<span class="tag">&lt;/h3&gt;</span>
+
+<span class="comment">&lt;!-- Paragraphe --&gt;</span>
+<span class="tag">&lt;p&gt;</span>Du texte ici<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Texte en gras / italique --&gt;</span>
+<span class="tag">&lt;strong&gt;</span>texte en gras<span class="tag">&lt;/strong&gt;</span>
+<span class="tag">&lt;em&gt;</span>texte en italique<span class="tag">&lt;/em&gt;</span>
+
+<span class="comment">&lt;!-- Lien --&gt;</span>
+<span class="tag">&lt;a href=<span class="str">"https://example.com"</span>&gt;</span>Clique ici<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Image --&gt;</span>
+<span class="tag">&lt;img src=<span class="str">"photo.jpg"</span>&gt;</span>
+
+<span class="comment">&lt;!-- Liste --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+  <span class="tag">&lt;li&gt;</span>Premier truc<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>Deuxième truc<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- Bloc / conteneur (pour regrouper des éléments) --&gt;</span>
+<span class="tag">&lt;div&gt;</span>
+  <span class="comment">&lt;!-- tout ce que tu veux dedans --&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Ligne horizontale --&gt;</span>
+<span class="tag">&lt;hr&gt;</span>
+
+<span class="comment">&lt;!-- Retour à la ligne --&gt;</span>
+<span class="tag">&lt;br&gt;</span></pre>
+      </div>
+
+
+      <!-- ===================== EMOJIS ===================== -->
+      <h2><span>😎</span> Emojis</h2>
+
+      <div class="card">
+        <p style="margin-bottom:8px;">Copie-colle directement dans ton HTML :</p>
+        <div class="emoji-list">🚀 🎮 🎧 🎨 🔥 💜 ⚡ 🌙 🌈 👾 🎵 💀 🦄 ✨ 🍕 🏀 🎯 💎 🤖 🌍</div>
+        <div class="tip">Les emojis fonctionnent partout en HTML : dans les titres, les paragraphes, même dans les liens !</div>
+      </div>
+
+
+      <!-- ===================== CURSEUR ===================== -->
+      <h2><span>🖱️</span> Curseur personnalisé</h2>
+
+      <div class="card">
+        <pre><span class="comment">/* Changer le curseur partout */</span>
+<span class="tag">body</span> {
+  <span class="prop">cursor</span>: <span class="val">crosshair</span>;
+}
+
+<span class="comment">/* Autres curseurs : pointer, grab, wait, help, not-allowed, cell, move */</span></pre>
+      </div>
+
+
+      <!-- ===================== IDÉES ===================== -->
+      <h2><span>💡</span> Idées pour ta page</h2>
+
+      <div class="card">
+        <div class="card-title">Fond qui couvre toute la page</div>
+        <pre><span class="tag">body</span> {
+  <span class="prop">background</span>: <span class="val">linear-gradient(135deg, #0f172a, #1e1b4b, #0f172a)</span>;
+  <span class="prop">color</span>: <span class="val">white</span>;
+}</pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Carte avec effet néon</div>
+        <pre><span class="tag">.carte</span> {
+  <span class="prop">background</span>: <span class="val">#1e293b</span>;
+  <span class="prop">border-radius</span>: <span class="val">20px</span>;
+  <span class="prop">padding</span>: <span class="val">30px</span>;
+  <span class="prop">border</span>: <span class="val">2px solid #3b82f6</span>;
+  <span class="prop">box-shadow</span>: <span class="val">0 0 15px #3b82f6, 0 0 30px #3b82f655</span>;
+  <span class="prop">transition</span>: <span class="val">all 0.3s ease</span>;
+}
+<span class="tag">.carte:hover</span> {
+  <span class="prop">box-shadow</span>: <span class="val">0 0 25px #8b5cf6, 0 0 50px #8b5cf655</span>;
+  <span class="prop">border-color</span>: <span class="val">#8b5cf6</span>;
+}</pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Texte avec dégradé</div>
+        <pre><span class="tag">h1</span> {
+  <span class="prop">background</span>: <span class="val">linear-gradient(90deg, #f97316, #ec4899, #8b5cf6)</span>;
+  <span class="prop">-webkit-background-clip</span>: <span class="val">text</span>;
+  <span class="prop">-webkit-text-fill-color</span>: <span class="val">transparent</span>;
+}</pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Image ronde style avatar</div>
+        <pre><span class="tag">img</span> {
+  <span class="prop">width</span>: <span class="val">200px</span>;
+  <span class="prop">height</span>: <span class="val">200px</span>;
+  <span class="prop">border-radius</span>: <span class="val">50%</span>;
+  <span class="prop">border</span>: <span class="val">4px solid gold</span>;
+  <span class="prop">object-fit</span>: <span class="val">cover</span>;    <span class="comment">/* recadre sans déformer */</span>
+}</pre>
+      </div>
+
+      <p class="footer">
+        Bon atelier ! N'oublie pas : le meilleur moyen d'apprendre, c'est d'essayer des trucs 🚀
+      </p>
+
+    </div>
+  </body>
+</html>
