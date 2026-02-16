@@ -7,7 +7,9 @@ Page d'accueil pour l'atelier live-coding "Mon premier site". Déployé automati
 ```
 ├── index.html            ← généré par build.js (ne pas modifier à la main)
 ├── build.js              ← script de génération de index.html
-├── fiche-triche.html     ← fiche triche HTML & CSS
+├── template.html         ← template de la page d'accueil (modifier ici)
+├── style.css             ← styles partagés (index + fiche triche)
+├── fiche-triche.html     ← cheat sheet HTML & CSS
 └── realisation/
     └── prenom.html       ← pages des étudiants
 ```
@@ -60,7 +62,6 @@ Page d'accueil pour l'atelier live-coding "Mon premier site". Déployé automati
 node build.js
 ```
 
-Régénère `index.html` en scannant tous les fichiers `.html` dans `realisation/`.
+Lit `template.html`, injecte les cartes étudiants à la place de `{{REALISATIONS}}`, et écrit le résultat dans `index.html`.
 
 **Build command Cloudflare Pages :** `node build.js`
-# atelier-web
